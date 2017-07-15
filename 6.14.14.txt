@@ -1,0 +1,25 @@
+//insert by finding the longest node, then adding the new node to the end of the tree
+void insertNode(struct node* node, Node inserted)
+{
+int leftCount = 0;
+int rightCount = 0;
+
+leftCount = max(node->left);
+rightCount = max(node->right);
+
+if (rightCount > leftCount)
+{
+node->left = inserted;
+}
+else
+{
+node->right = inserted;
+}
+}
+
+//Delete by copying the last node(max(node->left) to the previous node(max(node->right) then delete the last node
+void deleteNode(struct node* node)
+{
+max(node->right) = max(node->left);
+delete(max(node->left);
+}

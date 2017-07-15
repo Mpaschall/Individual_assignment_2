@@ -1,0 +1,17 @@
+bool checkBST(struct node* node)
+{
+if (node == null)
+{
+return true;
+}
+else if (node->left != null && max(node->left) > node->data)
+{
+return false;
+}
+else if (node->right != null && min(node->right) < node.data)
+{
+return false;
+}
+else
+return true;
+}

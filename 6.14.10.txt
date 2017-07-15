@@ -1,0 +1,11 @@
+void copyTree(Node *tree,  Node *& copyTree)
+{
+while (tree != null)
+{
+Node lNode = (tree->left);
+copyTree->left = node;
+
+Node rNode = (tree->right);
+copyTreee->right = node
+}
+}

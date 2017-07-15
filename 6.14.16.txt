@@ -1,0 +1,21 @@
+//while the right side is greater than left, remove the last from the right and add to the left
+//while left is more than one greater than the right tree, move last from left tree to right tree
+void balanceTree(struct node* node)
+{
+leftCount = 0;
+rightCount = 0;
+
+leftCount = max(node->left);
+rightCount = max(node->right);
+while (rightCount >= leftCount)
+{
+max(node->left) = max(node->right);
+}
+else
+{
+while (leftCount > (rightCount + 1)
+{
+max(rightCount) = max(leftCount);
+}
+}
+}
